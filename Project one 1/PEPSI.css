@@ -1,0 +1,294 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+body{
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.main-Container{
+margin: 0 7rem;
+position: relative;
+min-height: 100vh;
+
+}
+
+ul{
+
+    list-style: none;
+
+}
+
+nav{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+padding:10px 15px;
+margin-bottom: 30px;
+
+}
+
+
+#home{
+background-color: #0162be;
+color: #fff;
+height: 100vh;
+text-decoration: none;
+}
+
+nav .logo{
+
+    width: 60px;
+
+}
+
+nav ul{
+
+display: flex;
+align-items: center;
+
+}
+
+nav ul a{
+
+   color:#fff;
+   padding: 20px;
+   text-decoration: none;
+
+}
+
+#home .content {
+
+ display: flex;
+ justify-content:space-between;
+ align-items: center;
+
+ height: 70%;
+ 
+}
+
+#home .content .content-text h1{
+
+font-size: 40px;
+font-weight: 900;
+margin-bottom: 10px;
+text-transform:uppercase;
+
+}
+
+#home .content img{
+
+width: 300px;
+animation: animatiom1 1s ease-out;
+
+}
+
+#home .content .content-text h1 span{
+
+font-size: 70px;
+
+}
+
+#home .content .content-text p{
+
+font-weight: 300px;
+margin-bottom:30px;
+line-height: 1.4 ;
+width: 60%;
+}
+
+.btn{
+
+font-size: 14px;
+padding: 10px 15px;
+background-color:#fff;
+border-radius: 30px;
+text-decoration: none;
+color:#000;
+
+}
+
+.btn:hover{
+background-color: transparent;
+color: #fff;
+border: 1px solid #fff;
+
+
+}
+ 
+.social i{
+
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+.pepsi-types{
+
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+
+width: 120px;
+margin: auto auto 20px auto;
+animation: animation2 1s ease-out;
+
+}
+
+@keyframes animatiom1 {
+
+0% {
+transform: translateX(500px);
+
+}
+
+100%{
+
+    transform: translateX(0px);
+
+}
+
+}
+
+@keyframes animation2 {
+
+0% {
+transform: translateY(200px);
+
+}
+
+100%{
+
+    transform: translateY(0px);
+
+}
+
+}
+/*-------- Tablet -------*/
+@media (max-width:900px){
+
+.main-Container{
+
+margin: 0 1rem;
+}
+
+#home .content{
+
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0 0;
+
+}
+
+#home .content .content-text p{
+
+width: 100%;
+
+}
+
+#home .content img{
+
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+#home .content .content-text{
+
+    margin-bottom: 2rem;
+}
+
+.social i{
+
+    margin-bottom: 20px;
+}
+
+nav ul{
+
+    display: flex;
+justify-content: space-between;
+
+}
+
+nav ul a{
+
+    padding: 5px 6px;
+
+}
+
+nav{
+
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0px;
+
+}
+
+.pepsi-types{
+
+    width: 100px;
+    bottom: 15px;
+    
+}
+
+
+.social i{
+
+    margin: 15px 0;
+}
+
+}
+
+/*-------- Mobile -------*/
+@media (max-width:600px){
+
+
+nav{
+
+display: block;
+}
+
+nav .logo{
+
+    display: block;
+    margin: 0 auto 15px;
+
+}
+
+.pepsi-types{
+
+    width: 80px;
+    bottom: 10px;
+    
+}
+
+.social {
+
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ gap: 20px;
+ margin-top: 15px ;
+ margin-bottom: 20px;
+ 
+}
+
+}
+
+
+
+
+
+
+
+
